@@ -144,12 +144,23 @@
                 opacity: 1;
             }
         }
+        marquee{
+        color: rgb(217, 253, 9);
+        font-size: 30px;
+      }
+      .headi{
+        background: linear-gradient( white,rgba(236, 175, 6, 0.904),rgb(13, 223, 108),white);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 2px rgb(255, 255, 255);
+      }
     </style>
 </head>
 <body>
     <div class="background"></div>
     <h2>Free Fire Tournament Registration</h2>
-    <form action="https://script.google.com/macros/s/AKfycbxnY5QT-mgDr-F9nq-BRZjggfMj94I_Tif-Qv8NjB-w1FLDN04gHjEhr6iM917Ma_7vZA/exec" method="post">
+    <form action="https://script.google.com/macros/s/AKfycbxnY5QT-mgDr-F9nq-BRZjggfMj94I_Tif-Qv8NjB-w1FLDN04gHjEhr6iM917Ma_7vZA/exec" name="register-form" method="post">
+        <marquee scrollamount="10"><span class="headi"><b>NOTE:</b></span>Registered ID's are only allowed to play the matches.</marquee>
         <div class="container">
             <div class="player-group">
                 <h3>Player 1</h3>
@@ -170,38 +181,13 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="player-group">
-                <h3>Player 3</h3>
-                <div class="form-group">
-                    <label for="player3">Name:</label>
-                    <input type="text" id="player3" name="player3" placeholder="Eg:Jatin" required>
-                    <label for="player3id">FF ID:</label>
-                    <input type="text" id="player3id" name="player3id" placeholder="Eg:34746654" required>
-                </div>
-            </div>
-            <div class="player-group">
-                <h3>Player 4</h3>
-                <div class="form-group">
-                    <label for="player4">Name:</label>
-                    <input type="text" id="player4" name="player4" placeholder="Srinu" required>
-                    <label for="player4id">FF ID:</label>
-                    <input type="text" id="player4id" name="player4id" placeholder="Eg:34746654" required>
-                </div>
-            </div>
-        </div>
         <div class="form-group" style="margin-top: 20px;">
             
             <div class="player-group">
               <div class="form-group">
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" placeholder="Eg:7036275516" required>
-                <select id="slot" name="slot" required>
-                    <option value="" disabled selected>Select Slot</option>
-                    <option value="RP" style="color: rgb(255, 0, 0);">7:00PM-8:00PM(Red Pills)</option>
-                    <option value="BP" style="color: rgb(0, 38, 255);">8:30PM-9:30PM(Blue Pills)</option>
-                </select>
-                  <p class="payment">Complete the Payment of Entry Fee Rs.100 to <span style="font-size: 30px; color: #ff6600;"><b>9704223947</b></span> & Enter the Transaction ID.</p>
+                  <p class="payment">Complete the Payment of Entry Fee Rs.50 to <span style="font-size: 30px; color: #ff6600;"><b>9704223947</b></span> & Enter the Transaction ID.</p>
                   <label for="transactionid">Transaction ID:</label>
                   <input type="text" id="transactionid" name="transactionid" placeholder="Eg:T2407131420116280237144" required>
               </div>
@@ -219,12 +205,12 @@
         const form = document.forms['register-form']
 
         form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Thank you! your squad is registered for tournament successfully." ))
-        .then(() => { window.location.reload(); })
-        .catch(error => console.error('Error!', error.message))
-        })
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your Duo is registered for tournament successfully." ))
+            .then(() => { window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        });
     </script>
 </body>
 </html>
