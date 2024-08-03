@@ -47,9 +47,7 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
-tr:hover {
-    background-color: #f1f1f1;
-}
+
 
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
@@ -66,12 +64,64 @@ tbody tr:nth-child(even) {
     }
 }
 
+
+
     </style>
 </head>
 <body>
     <div class="table-container">
         <h1>Points Table</h1>
-        <table>
+        <h3 style="color: #f00707;">Group A</h3>
+        <table class="A">
+            <thead style="background: #ff0000;">
+                <tr>
+                    <th>Q/E</th>
+                    <th>Team Name</th>
+                    <th>MP</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Points</th>
+                    <th>Round Difference</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: orange;">
+                    <td>Q</td>
+                    <td>A3(Ram Team)</td>
+                    
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>+2</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>A1(Hani Team)</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                
+                <tr>
+                    <td>E</td>
+                    <td>A2(Lokesh Team)</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>-2</td>
+                </tr>
+               
+                
+                
+            </tbody>
+        </table>
+
+        <h3 style="color: #1e07f0;">Group B</h3>
+        <table class="B">
             <thead>
                 <tr>
                     <th>Team Name</th>
@@ -84,46 +134,73 @@ tbody tr:nth-child(even) {
             </thead>
             <tbody>
                 <tr>
-                    <td>Hani Team</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>B1(Anil Team)</td>
+                    <td></td>
                     <td>0</td>
-                    <td>4</td>
-                    <td>+5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
-                    <td>Balu Team</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>+2</td>
-                </tr>
-                <tr>
-                    <td>Chanti Team</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>-3</td>
-                </tr>
-                <tr>
-                    <td>Daya Team</td>
-                    <td>1</td>
+                    <td>B2(Jagan Team)</td>
                     <td>0</td>
-                    <td>1</td>
                     <td>0</td>
-                    <td>-3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+               
+                <tr>
+                    <td>B3(Abhisai Team)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 
+            </tbody>
+        </table>
+        
+        <h3 style="color: #36f007;">Group C</h3>
+        <table class="C">
+            <thead style="background: #15ff00;">
                 <tr>
-                    <td>Sharwin Team</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>-3</td>
+                    <th>Team Name</th>
+                    <th>MP</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Points</th>
+                    <th>Round Difference</th>
                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C1(Tarun Team)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>C2(Chanti Team)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+               
+                <tr>
+                    <td>C3(Likhith Team)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                
             </tbody>
         </table>
     </div>
